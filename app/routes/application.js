@@ -8,5 +8,8 @@ export default Ember.Route.extend({
             password: 'Loulou565'
         });
         return this.get('session').fetch().catch(function() {});
+    },
+    model() {
+        return this.store.findAll('agenda');
     }
 });
