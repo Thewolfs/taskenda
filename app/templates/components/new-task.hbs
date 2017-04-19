@@ -1,0 +1,10 @@
+<div class="add-task">
+    <button {{action "showForm"}}>+</button>
+    {{#if expandForm}}
+        <form>
+            {{input value=task.title}}
+            {{textarea value=task.desc}}
+            <button type="submit" {{action "addTask"}}>Add</button>
+        </form>
+    {{/if}}
+</div>

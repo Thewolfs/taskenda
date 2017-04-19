@@ -38,3 +38,8 @@ body {
     border-bottom: 1px solid #BDBDBD;
     border-top: 1px dashed #BDBDBD;
 }
+
+.add-task {
+    color: black;
+    z-index: 999;
+}
